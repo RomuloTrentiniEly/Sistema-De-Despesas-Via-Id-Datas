@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="ConsultaId">
+        <h3>Consulte:</h3>
+        <h4>Despesas e Vendas por ID:</h4> <br>
+         <strong> ID do Produto: </strong><br/>
+        <input type="number" placeholder="Digite Aqui" id="ID">
+        <button onclick="ConsultarViaId()">Consultar</button>
+        
+    </div>
+    
+    <div class="principal">
+        
+        <h1>Despesas da empresa:</h1> <br>
+
+        <h3>ID Produto:</h3>
+        <input type="text" placeholder="Digite aqui" id="id"/> 
+                
+        <h3>Nome Do Produto:</h3>
+        <input type="text" placeholder="Digite aqui" id="nomeProduto"> <br>
+
+        <h3>O que se Refere:</h3>
+        <input type="radio" value="OPC1" name="Tipo" id="gasto">Gasto<br>
+        <input type="radio" value="OPC2" name="Tipo" id="venda">Venda 
+
+        <h3>Valor Da Despesa:</h3>
+        <input type="number" placeholder="Digite Aqui" id="Valor">
+
+        <h3>Data da dessape:</h3>
+        <input type="date" id="data"><br>
+
+        <button onclick="Adicionar()">Adicionar Despesa</button>
+        <p id="res" ></p>
+    </div>
+
+    <div class="consulta">
+        <h3>Consulte:</h3>
+        <h4>Despesas e Vendas Por datas:</h4>
+        DE: <br/>
+        <input type="date" id="DataInicial" ><br>
+        ATÉ: <br/>
+        <input type="date" id="DataFinal"> <br>
+        
+        <button onclick="Consultar()">Consultar</button>
+        <button onclick="DespesasFixas()">Consultar Gastos fixos</button>
+    </div>
+
+
+    <div class="respostas">
+        <p id="ResConsulta"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

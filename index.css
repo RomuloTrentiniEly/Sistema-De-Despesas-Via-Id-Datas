@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url(https://conceitosdomundo.pt/wp-content/uploads/2021/10/servidor.jpg);
+    background-size: cover;
+}
+.principal{
+    background-color: white;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px solid black;
+    box-shadow: 1px 5px 10px black;
+    padding: 1.5rem;
+    font-size: 1.3em;
+    border-radius: 15px;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 5px;
+}
+
+input{
+    padding: 0.3rem;
+   
+}
+
+input:placeholder{
+    font-family: "Space grotesk", sans-serif;
+}
+
+button{
+    width: 80%;;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.consulta{
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: 1px 5px 10px black;
+    margin: 1rem;
+    padding: 1rem;
+    
+    }
+
+.respostas{
+    background-color: white;
+    font-family: sans-serif;
+    margin: 1rem;
+    padding: 1rem;
+}    
+
+#res{
+    color: green;
+    font-style: italic;
+}
+
+.vermelho {
+    color: red;
+  }
+  
+  .verde {
+    color: green;
+  }
+
+.ConsultaId{
+   
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: 1px 5px 10px black;
+    margin: 1rem;
+    padding: 1rem;
+  }
